@@ -16,5 +16,6 @@ package org.bozlc.rpc.provider;
  */
 public interface DemoProvider {
     public String getDemo(String demo);
+    public String getDemo(String demo, String name);
     public void saveDemo(String demo);
 }

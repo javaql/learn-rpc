@@ -26,6 +26,12 @@ public class DemoConsumer {
         return demo;
     }
 
+    public String getDemo(String name, String name1) {
+        String demo = demoProvider.getDemo(name, name1);
+        System.out.println("读取到结果[" + demo + "]");
+        return demo;
+    }
+
     public void saveDemo(String name) {
         demoProvider.saveDemo(name);
     }

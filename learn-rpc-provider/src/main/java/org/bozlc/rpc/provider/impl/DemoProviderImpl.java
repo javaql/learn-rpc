@@ -2,7 +2,6 @@
  * DemoProviderImpl.java 2019年05月30日 16:22
  * <p/>
  *
- *
  * @Description
  * @version 1.0
  */
@@ -20,6 +19,12 @@ public class DemoProviderImpl implements DemoProvider {
     @Override
     public String getDemo(String demo) {
         return "success get " + demo;
+    }
+
+    @Override
+    public String getDemo(String demo, String name) {
+
+        return "success get " + demo + "+" + name;
     }
 
     @Override

@@ -24,7 +24,7 @@ public class ConsumerStart {
         DemoProvider demoProvider = Client.getRemoteProxyObj(DemoProvider.class, new InetSocketAddress("127.0.0.1", 28880));
         DemoConsumer demoConsumer = new DemoConsumer();
         demoConsumer.setDemoProvider(demoProvider);
-        String demo = demoConsumer.getDemo("qilong");
+        String demo = demoConsumer.getDemo("qilong", "test");
         demoConsumer.saveDemo(demo);
     }
 }
